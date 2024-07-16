@@ -1,0 +1,23 @@
+
+Локатор логотипа (html-елемент, содержащий в себе значок и слово "авиасейлс") - <тут ваш локатор>
+<span> - <data-test-id="logo"> или span#logo
+
+Локатор поля Откуда - <тут ваш локатор>
+<input> - <data-test-id="form-input"> или input#form-input
+
+Локатор поля Куда - <тут ваш локатор>
+<input> - <data-test-id="destination-input"> или input#destination-input
+
+Локатор поля Когда - <тут ваш локатор>
+<div> - <data-test-id="start-date-value"> или div#start-date-value
+
+Локатор поля Обратно - <тут ваш локатор>
+<div> - <data-test-id="end-date-value"> или div#end-date-value
+
+Локатор чек-бокса "Открыть Ostrovok.ru в новой вкладке" - <тут ваш локатор>
+<svg> - <"s__XM8ZO5vgPE3EvHQrwWsZ"> или svg.s__XM8ZO5vgPE3EvHQrwWsZ
+
+Локатор кнопки Найти билеты - <тут ваш локатор>
+
+<div> - <class="s__wr9OcknDPAtMpjta7a24 s__pWd6FeazwBmNIpomSjsp s__YQHxt19vOcGsOro8j0pF"> 
+или div.s__wr9OcknDPAtMpjta7a24 s__pWd6FeazwBmNIpomSjsp s__YQHxt19vOcGsOro8j0pF
