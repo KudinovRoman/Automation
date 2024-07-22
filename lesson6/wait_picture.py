@@ -1,4 +1,3 @@
-from time import sleep
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -13,17 +12,18 @@ driver.maximize_window()
 waiter = WebDriverWait(driver, 40)
 
 try:
-    driver.get("https://bonigarcia.dev/selenium-webdriver-java/loading-images.html")
+    driver.get(
+        "https://bonigarcia.dev/selenium-webdriver-java/loading-images.html"
+        )
 
     waiter.until(
-        EC.presence_of_element_located((By.ID, "award"))
+        EC.presence_of_element_located((By.ID, "landscape"))
     )
-    
+
     award = driver.find_element(By.ID, "award")
     src = award.get_attribute('src')
 
     print(src)
-    sleep(5)
 
 except Exception as ex:
     print(ex)
