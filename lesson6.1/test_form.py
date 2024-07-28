@@ -1,4 +1,3 @@
-from time import sleep
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -13,7 +12,7 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 driver.maximize_window()
 waiting = WebDriverWait(driver, 10)
 
-try:
+def test_form():
     driver.get(
         "https://bonigarcia.dev/selenium-webdriver-java/data-types.html"
         )
@@ -31,8 +30,7 @@ try:
 
 
     driver.find_element(By.CSS_SELECTOR, '[type="submit"]').click()
-    
-    sleep(5)
+
 
     waiting.until(EC.presence_of_element_located((By.ID, "zip-code")))
 
@@ -55,9 +53,6 @@ try:
     #d1e7dd
 
     assert color_lenght == background_color_all
-
-except Exception as ex:
-    print(ex)
-
-finally:
+    
     driver.quit()
+

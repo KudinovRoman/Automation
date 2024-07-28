@@ -11,7 +11,7 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 
 driver.maximize_window()
 waiter = WebDriverWait(driver, 50)
-try:
+def test_calculator():
     driver.get(
         "https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html"
         )
@@ -51,9 +51,5 @@ try:
     screen_text = driver.find_element(By.CLASS_NAME, "screen").text
 
     assert screen_text == str(result)
-
-except Exception as ex:
-    print(ex)
-
-finally:
     driver.quit()
+
